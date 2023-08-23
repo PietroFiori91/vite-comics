@@ -1,21 +1,21 @@
 <script>
+import TheHeader from "./components/TheHeader.vue";
+import TheFooter from "./components/TheFooter.vue";
+import ThePreFooter from "./components/ThePreFooter.vue";
 
-    import TheHeader from "./components/TheHeader.vue0";
-
-    export default {
-      components: {
-        TheHeader,
-      }
-    }
-
+export default {
+  components: {
+    TheHeader,
+    ThePreFooter,
+    TheFooter,
+  },
+};
 </script>
 
 <template>
-
-  <TheHeader/>
-
+  <TheHeader />
+  <ThePreFooter />
+  <TheFooter />
 </template>
 
-<style>
-
-</style>
+<style></style>

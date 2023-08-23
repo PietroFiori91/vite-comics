@@ -3,11 +3,13 @@ export default {};
 </script>
 
 <template>
-  <header>
+  <footer>
     <div
       class="container mynavbar d-flex flex-row align-items-center justify-content-between"
     >
-      <img src="../assets/img/dc-logo.png" alt="" />
+      <button type="button" class="btn btn-outline-primary">
+        SIGN-UP NOW!
+      </button>
 
       <div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -25,12 +27,12 @@ export default {};
         </nav>
       </div>
     </div>
-  </header>
+  </footer>
 </template>
 
 <style scoped>
-header {
-  background-color: white;
+footer {
+  background-color: rgb(56, 56, 56);
 }
 .mynavbar {
   padding: 2rem 0;
