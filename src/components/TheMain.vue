@@ -25,7 +25,6 @@ export default {};
     </div>
   </div>
 </template>
-
 <style scoped>
 .mynavbar {
   padding: 2rem 0;

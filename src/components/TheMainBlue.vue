@@ -3,31 +3,53 @@ export default {};
 </script>
 
 <template>
-  <div
-    class="container mynavbar d-flex flex-row align-items-center justify-content-between"
-  >
-    <button type="button" class="btn btn-outline-primary">SIGN-UP NOW!</button>
-
-    <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link" href="#">Pricing</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+  <main>
+    <div
+      class="container mynavbar d-flex flex-row align-items-center justify-content-around"
+    >
+      <div class="d-flex align-items-center gap-3">
+        <img src="../assets/img/buy-comics-digital-comics.png" alt="" />
+        <h5>DIGITAL COMICS</h5>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <img src="../assets/img/buy-comics-merchandise.png" alt="" />
+        <h5>DC MERCHANDISE</h5>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <img src="../assets/img/buy-comics-subscriptions.png" alt="" />
+        <h5>SUBSCRIPTION</h5>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <img src="../assets/img/buy-comics-shop-locator.png" alt="" />
+        <h5>COMIC SHOP LOCATOR</h5>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <img src="../assets/img/buy-comics-digital-comics.png" alt="" />
+        <h5>PC POWER VISA</h5>
+      </div>
     </div>
-  </div>
+  </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+//installo sass sul componente + as * per utilizzarlo senza dichiarare variabile
+
+@use "../styles/partials/variables" as *;
+
+main {
+  background-color: $color-primary;
+  height: 8rem;
+}
 .mynavbar {
   padding: 2rem 0;
+}
+
+img {
+  max-width: 50px;
+}
+
+h5 {
+  color: white;
+  font-size: 1rem;
 }
 </style>
