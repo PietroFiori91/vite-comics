@@ -3,11 +3,11 @@ export default {};
 </script>
 
 <template>
-  <main><img src="../assets/img/jumbotron.jpg" alt="" /></main>
+  <main><img class="jumbo" src="../assets/img/jumbotron.jpg" alt="" /></main>
 </template>
 
 <style scoped>
-img {
+.jumbo {
   width: 100%;
   max-height: 300px;
   object-fit: cover;

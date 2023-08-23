@@ -30,11 +30,15 @@ export default {
   <!-- <TheMain /> -->
   <main>
     <div class="container text-center">
-      <ul>
-        <li v-for="products in productsArray">
+      <div class="row row-cols-6">
+        <div
+          class="card border-0 rounded-0 bg-black"
+          v-for="products in productsArray"
+        >
+          <img class="myimg" :src="products.thumb" alt="" />
           {{ products.type }}
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </main>
   <TheMainBlue />
@@ -42,8 +46,12 @@ export default {
   <TheFooter />
 </template>
 
-<style>
+<style lang="scss">
 body {
   background-color: black;
+}
+.myimg {
+  aspect-ratio: 1/1;
+  max-width: 250px;
 }
 </style>
